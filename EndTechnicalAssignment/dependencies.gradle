@@ -1,0 +1,62 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+
+    kotlinVersion = "1.2.31"
+    rxJavaVersion = "2.1.10"
+    rxAndroidVersion = "2.0.2"
+
+    supportVersion = "27.1.1"
+    appCompatVersion = "27.1.1"
+    constraintLayoutVersion = "1.1.0"
+
+    junitVersion = "4.12"
+    testRunnerVersion = "1.0.1"
+    testEspressoVersion = "3.0.1"
+
+    retrofitVersion = "2.4.0"
+    retrofitRxVersion = "2.3.0"
+    retrofitGsonVersion = "2.4.0"
+
+    daggerVersion = "2.14.1"
+
+    javaxVersion = "3.1.1"
+
+    picassoVersion = "2.71828"
+
+    pagingLibraryVersion = "1.0.0-alpha6"
+
+    mockitoVersion = "2.18.3"
+
+    appDependencies = [
+            constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
+            appCompat       : "com.android.support:appcompat-v7:$appCompatVersion",
+            kotlin          : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlinVersion",
+            designLibrary   : "com.android.support:design:$supportVersion",
+            cardView        : "com.android.support:cardview-v7:$supportVersion",
+            rxJava          : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxAndroid       : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            pagingLibrary   : "android.arch.paging:runtime:$pagingLibraryVersion",
+            dagger          : "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler  : "com.google.dagger:dagger-compiler:$daggerVersion",
+            picasso         : "com.squareup.picasso:picasso:$picassoVersion",
+            retrofit        : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            rxRetrofit      : "com.squareup.retrofit2:adapter-rxjava2:$retrofitRxVersion",
+            gsonRetrofit    : "com.squareup.retrofit2:converter-gson:$retrofitGsonVersion",
+            recyclerView    : "com.android.support:recyclerview-v7:$supportVersion",
+    ]
+
+    qaDependencies = [
+            jUnit        : "junit:junit:$junitVersion",
+            testRunner   : "com.android.support.test:runner:$testRunnerVersion",
+            testEspresso : "com.android.support.test.espresso:espresso-core:$testEspressoVersion",
+            mockito      : "org.mockito:mockito-core:$mockitoVersion",
+            mockitoKotlin: "com.nhaarman:mockito-kotlin:1.5.0",
+            kotlinTest : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
+    ]
+}

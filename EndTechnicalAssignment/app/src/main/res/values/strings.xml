@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EndTechnicalAssignment</string>
+
+    <string name="product_image_transition">imageTransition</string>
+    <string name="product_name_transition">nameTransition</string>
+    <string name="product_price_transition">priceTransition</string>
+    <string name="btn_add_to_cart">Add to cart</string>
+
+</resources>

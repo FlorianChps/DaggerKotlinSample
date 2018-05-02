@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "endtest.chaps.flo.endtechnicalassignment"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"https://www.endclothing.com\""
+        }
+
+        debug {
+            buildConfigField "String", "BASE_URL", "\"https://www.endclothing.com\""
+        }
+    }
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    implementation appDependencies.kotlin
+    implementation appDependencies.appCompat
+    implementation appDependencies.constraintLayout
+    implementation appDependencies.designLibrary
+
+    implementation appDependencies.retrofit
+    implementation appDependencies.rxRetrofit
+    implementation appDependencies.gsonRetrofit
+
+    implementation appDependencies.dagger
+    kapt appDependencies.daggerCompiler
+   // compileOnly appDependencies.glassFish
+
+    implementation appDependencies.rxJava
+    implementation appDependencies.rxAndroid
+    implementation appDependencies.recyclerView
+    implementation appDependencies.cardView
+
+    implementation appDependencies.picasso
+
+    // Unit test / UI Test
+    testImplementation qaDependencies.jUnit
+    testImplementation qaDependencies.kotlinTest
+    testImplementation qaDependencies.mockito
+    testImplementation qaDependencies.mockitoKotlin
+    androidTestImplementation qaDependencies.testRunner
+    androidTestImplementation qaDependencies.testEspresso
+
+}

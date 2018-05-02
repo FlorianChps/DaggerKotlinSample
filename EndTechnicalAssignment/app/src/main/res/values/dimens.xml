@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_square_card_product_item">200dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="margin_bot_product_name">4dp</dimen>
+    <dimen name="margin_end_product_name">4dp</dimen>
+    <dimen name="margin_start_product_name">4dp</dimen>
+    <dimen name="margin_end_product_price">4dp</dimen>
+    <dimen name="margin_start_product_price">4dp</dimen>
+    <dimen name="margin_bot_product_price">4dp</dimen>
+    <dimen name="width_stroke_button_basket">1dp</dimen>
+    <dimen name="btn_basket_margin">8dp</dimen>
+    <dimen name="f_size_price">20sp</dimen>
+    <dimen name="image_product_height">200dp</dimen>
+    <dimen name="coll_toolbar_elevation">4dp</dimen>
+    <dimen name="constraint_width_match_parent">0dp</dimen>
+    <dimen name="constraint_height_match_parent">0dp</dimen>
+</resources>
